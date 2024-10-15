@@ -1,0 +1,90 @@
+*Single-Letter Commands
+a: Enter Insert mode after the cursor (append).
+A: Enter Insert mode at the end of the line.
+b: Move the cursor backward to the beginning of the previous word.
+B: Move the cursor backward to the beginning of the previous WORD (a WORD is a sequence of non-whitespace characters).
+c: Begin a change operation (requires a motion, e.g., cw changes the current word).
+C: Change (replace) the rest of the line (c$).
+d: Begin a delete operation (requires a motion, e.g., dw deletes the current word).
+D: Delete the rest of the line (d$).
+e: Move the cursor forward to the end of the current word.
+E: Move the cursor forward to the end of the current WORD.
+f: Move the cursor forward to the next occurrence of a specified character on the current line (e.g., fa moves to the next "a").
+F: Move the cursor backward to the previous occurrence of a specified character on the current line.
+g: Prefix for many commands (e.g., gg moves to the beginning of the file, g~ toggles the case of the selected text).q
+h: Move the cursor one character to the left.
+i: Enter Insert mode at the cursor position.
+I: Enter Insert mode at the beginning of the line.
+j: Move the cursor down one line.
+k: Move the cursor up one line.
+l: Move the cursor one character to the right.
+m: Mark the current position with a specified letter (e.g., ma marks the current position with "a").
+n: Repeat the last search in the same direction.
+N: Repeat the last search in the opposite direction.
+o: Open a new line below the current one and enter Insert mode.
+O: Open a new line above the current one and enter Insert mode.
+p: Paste the text from the unnamed register after the cursor.
+P: Paste the text from the unnamed register before the cursor.
+q: Record a macro (followed by a letter to name the macro, e.g., qa starts recording a macro into "a").
+r: Replace the character under the cursor with the next character typed.
+R: Enter Replace mode (overwrite existing text as you type).
+s: Substitute (delete) the character under the cursor and enter Insert mode.
+S: Substitute the entire line (delete the line and enter Insert mode).
+t: Move the cursor forward to just before the next occurrence of a specified character on the current line.
+T: Move the cursor backward to just before the previous occurrence of a specified character on the current line.
+u: Undo the last action.
+U: Undo all changes on the current line.
+v: Enter Visual mode (for selecting text).
+V: Enter Visual Line mode (select whole lines).
+w: Move the cursor forward to the beginning of the next word.
+W: Move the cursor forward to the beginning of the next WORD.
+x: Delete the character under the cursor.
+X: Delete the character before the cursor.
+y: Yank (copy) the text specified by a motion (e.g., yw yanks a word).
+Y: Yank the current line (same as yy).
+z: Various commands related to screen position (e.g., zz centers the current line in the window).
+Z: ZZ saves the current file and exits Vim (same as :wq).
+
+*Double-Letter Commands
+gg: Move the cursor to the first line of the file.
+G: Move the cursor to the last line of the file.
+dd: Delete the current line.
+yy: Yank (copy) the current line.
+cc: Change the current line.
+>>: Indent the current line.
+<<: Unindent the current line.
+==: Auto-indent the current line.
+
+*Command-Line Mode (: commands)
+: Save the file (write).
+: Quit Vim.
+: Save the file and quit.
+!: Quit without saving.
+[filename]: Open a file in Vim.
+: Save and quit (same as :wq).
+[filename]: Read a file into the current buffer.
+[option]: Set an option (e.g., :set number shows line numbers).
+[command]: Open the help documentation for a specific command.
+
+*Visual Mode (Text Selection)
+v: Enter Visual mode (character-wise selection).
+V: Enter Visual Line mode (line-wise selection).
+Ctrl+v: Enter Visual Block mode (block-wise selection).
+o: Move the cursor to the opposite end of the selection.
+Esc: Exit Visual mode.
+
+*Common Prefixes
+d: Delete.
+y: Yank (copy).
+c: Change (delete and enter Insert mode).
+v: Enter Visual mode.
+
+**Special Characters and Symbols
+.: Repeat the last command.
+:: Enter Command-line mode.
+/: Search forward for a pattern.
+?: Search backward for a pattern.
+%: Move to the matching parenthesis, brace, or bracket.
+~: Toggle the case of the character under the cursor.
+
+
